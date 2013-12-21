@@ -1,10 +1,13 @@
 if [[ -z "$1" ]]
 then
-    echo "Hint: First argument is the port number. Using default 9001";
+    echo "Hint: First argument is the port number";
 	port=9001
 else
-    echo "Using port "$1
 	port=$1
 fi
+
+for i in $( list_ip_addresses.sh ); do
+    echo "$i:$port"
+done
 
 sudo python -m SimpleHTTPServer $port
