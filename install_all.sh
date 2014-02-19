@@ -1,3 +1,4 @@
+chmod -R +x *;
 ./install_ruby.sh
 ./install_xct.sh
 ./install_brew.sh
@@ -7,6 +8,7 @@
 ./install_ssh_copy_id.sh
 ./install_imagemagick.sh
 ./install_lolcommits.sh
+./install_z.sh
 
 
 #add these directories if they are not found to the PATH
